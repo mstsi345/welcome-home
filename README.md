@@ -16,7 +16,7 @@ Composed of a raspberry Pi, a PIR detecting sensor and a Pi camera, the device c
 10. 1 Keyboard
 
 # Acknowledgement
-Huge thanks to [Caroline Dunn] for combining modules, open-cv and face-recognition, well together so that we can develop further applications based on it.
+Huge thanks to [Caroline Dunn][1] for combining modules, open-cv and face-recognition, well together so that we can develop further applications based on it.
 
 # Reference
 [1]: https://www.tomshardware.com/how-to/raspberry-pi-facial-recognition
