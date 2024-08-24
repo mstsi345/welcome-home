@@ -40,7 +40,6 @@ def faceRecog():
 		# to 500px (to speedup processing)
 		frame = picam.capture_array()
 		frame = imutils.resize(frame, width=500)
-		print(frame.shape)
 
 		boxes = face_recognition.face_locations(frame)
 		encodings = face_recognition.face_encodings(frame, boxes)
@@ -92,8 +91,12 @@ def faceRecog():
 			# picam.stop_preview()
 			cv2.destroyAllWindows()
 			
-			print(name_hist)
-			return max(name_hist, key=lambda x: name_hist.count(x))
+			logging.info(name_hist)
+			final_result = max(name_hist, key=lambda x: name_hist.count(x)) if name_hist else 'None'
+			confidence = name_hist.count(final_result)/len(name_hist) if name_hist else float(0)
+			logging.info(f"final_result: {final_result}, confidence: {confidence}")
+			
+			return {'pred_result': final_result, 'confidence': confidence}
 			
 		# update the FPS counter
 		fps.update()
