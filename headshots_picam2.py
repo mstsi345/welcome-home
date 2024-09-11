@@ -12,7 +12,7 @@ now = datetime.now().strftime('%Y%m%d_%H%M%S')
 
 # take pictures
 picam.start_and_capture_files(f'./dataset/{name}/{now}_'+'{:03d}.png',
-    num_files=10, initial_delay=3, delay=1)
+    num_files=30, initial_delay=3, delay=1)
     
 sleep(3)
 

@@ -14,6 +14,7 @@ Composed of a raspberry Pi, a PIR detecting sensor and a Pi camera, the device c
 8. 1 Monitor
 9. 1 Mouse
 10. 1 Keyboard
+11. 1 speaker
 
 # Acknowledgement
 Huge thanks to [Caroline Dunn][1] for combining modules, open-cv and face-recognition, well together so that we can develop further applications based on it.
